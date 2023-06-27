@@ -13,18 +13,22 @@ const { todosIncompleted, todosCompleted, toggle, deleteTodo } = todosFactory();
       :key="todo.id"
       @click="toggle(todo.id)"
     >
-      <input type="checkbox" />
+      <input class="boton-check" type="checkbox" />
       <label>{{ todo.name }}</label>
-      <button class="delete" @click="deleteTodo(todo.id)">Delete</button>
+      <span class="icon"
+        ><i class="bi bi-trash" @click="deleteTodo(todo.id)"></i
+      ></span>
     </li>
   </ul>
   <h3>Completed</h3>
   <ul id="completed-tasks">
     <li v-for="todo in todosCompleted" :key="todo.id" @click="toggle(todo.id)">
-      <input type="checkbox" checked />
+      <input class="boton-check" type="checkbox" checked />
       <label>{{ todo.name }}</label>
       <input type="text" />
-      <button class="delete" @click="deleteTodo(todo.id)">Delete</button>
+      <span class="icon"
+        ><i class="bi bi-trash" @click="deleteTodo(todo.id)"></i
+      ></span>
     </li>
   </ul>
 </template>

@@ -27,7 +27,7 @@ prefetch();
     </template>
   </div>
 </template>
-
+<!--Esto es un pequeño comentario: hoy tuve la grata satifaccion de hacer una aplicacion con el querido frame VUE, ya que nunca tuve la experiencia ni habia tocado vue.. realmente me gusto muchisimo creo que es mas amigable de aprender rapidamente es mi primera vez con este frame y me gustaria que me den la oportunidad de aprender mas del en su equipo-->
 <style>
 @import "./assets/base.css";
 </style>

@@ -4,17 +4,14 @@
   padding: 0;
 }
 
-
 :root {
-  --text-color: #000000;
-  --bg-color: linear-gradient(to bottom right, #1f6153, #a1715e);
+  --bg-color: linear-gradient(to bottom left, #1f3e61, #b43939e5);
 }
 
 body {
-  background-color: #493f3f67;
-  color: var(--text-color);
+  background-color: #c0b3b38e;
   font-family: "Roboto", sans-serif;
-  
+  height: 100%;
 }
 
 /* navbar*/
@@ -26,8 +23,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 12px;
-  border: 2px solid;
-  box-shadow: 10px 10px 10px 10px black;
+  border: 10px solid;
+  box-shadow: 0px 12px 20px rgba(25, 25, 25, 22);
 }
 
 .list-container {
@@ -44,12 +41,13 @@ body {
 
 .title-list {
   text-transform: uppercase;
-  color: black;
+  color: #f7efef;
   font-weight: 600;
 }
 
 .loader {
   text-align: center;
+  color: #f7efef;
 }
 li * {
   float: left;
@@ -60,15 +58,21 @@ h3 {
   clear: both;
   list-style: none;
 }
-input,
-button {
-  outline: none;
+
+.boton-check{
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  border: none;
+  padding: 1%;
+  cursor: pointer;
 }
 
 button {
   background: #0000009a;
   color: white;
-  width: 73px;
   border-radius: 12px;
   border: none;
   padding: 1%;
@@ -85,7 +89,7 @@ button[type="add"] {
 
 h3,
 label[for="new-task"] {
-  color: #000;
+  color: #f7efef;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
@@ -119,8 +123,8 @@ li {
 }
 
 li > label {
-  font-size: 18px;
-  color: #000;
+  font-size: 15px;
+  color: #f7efef;
   line-height: 40px;
   width: 237px;
   padding: 0 0 0 11px;
@@ -133,7 +137,7 @@ li > input[type="text"] {
 
 #completed-tasks label {
   text-decoration: line-through;
-  color: #888;
+  color: #f7efef;
 }
 
 ul li input[type="text"] {
