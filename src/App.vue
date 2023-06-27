@@ -22,6 +22,7 @@ prefetch();
         <RouterLink to="/"><li class="title-list">Task List</li></RouterLink>
         <RouterLink to="/new"><li class="title-list">New Todo</li></RouterLink>
       </ul>
+
       <RouterView />
     </template>
   </div>
