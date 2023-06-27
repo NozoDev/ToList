@@ -12,9 +12,15 @@ const addAndNavigate = (name) => {
 
 <template>
   <div class="list-container">
-    <label for="new-task">New Task</label>
-    <input id="new-task" type="text" v-model="name" />
-    <button type="add" @click="addAndNavigate(name)"><i class="bi bi-plus-circle-fill"></i></button>
+    <label class="new-task">New Task</label>
+    <input class="new-task" type="text" v-model="name" />
+    <span class="boton-add">
+      <i
+        class="bi bi-plus-circle-fill"
+        type="add"
+        @click="addAndNavigate(name)"
+      ></i>
+    </span>
   </div>
 </template>
 

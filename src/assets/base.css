@@ -32,6 +32,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 4%;
+  color: #f7efef;
 }
 
 .order-list {
@@ -60,7 +61,7 @@ h3 {
   list-style: none;
 }
 
-.boton-check{
+.boton-check {
   cursor: pointer;
 }
 
@@ -79,9 +80,10 @@ button {
   padding: 1%;
   cursor: pointer;
 }
-button[type="add"] {
-  padding: 10px; /* Ajusta el tamaño del botón */
-  font-size: 25px; /* Ajusta el tamaño del icono */
+
+.boton-add {
+  padding: 10px;
+  font-size: 25px;
   color: white;
   border: none;
   cursor: pointer;
@@ -89,7 +91,7 @@ button[type="add"] {
 }
 
 h3,
-label[for="new-task"] {
+p {
   color: #f7efef;
   font-weight: 700;
   font-size: 15px;
@@ -99,19 +101,13 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"]:focus {
-  color: #020202;
-}
-
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-input#new-task {
+.new-task {
+  text-align: center;
   margin-bottom: 15px;
   width: 318px;
   border-radius: 12px;
   height: 21px;
+  font-weight: bold;
 }
 
 li {
